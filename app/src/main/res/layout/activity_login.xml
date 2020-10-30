@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nuevofondo"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/titulo"
+        android:layout_height="wrap_content"
+        android:text="Ingrese con su cuenta."
+        android:gravity="center_horizontal"
+        android:textColor="#FFFF"
+        android:layout_above="@id/usuario"
+        android:textSize="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/usuario"
+        android:hint="  USUARIO"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/round_person_white_24"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/contraseña"
+        android:hint="  CONTRASEÑA"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:textColorHint="#fff"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/usuario"
+        android:drawableLeft="@drawable/round_lock_white_24"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECUPERAR CONTRASEÑA."
+            android:id="@+id/btnRecuperar"
+            android:background="#00000000"
+            android:layout_gravity="right"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contraseña"
+        android:layout_margin="30dp"
+        android:id="@+id/btnIngresar"
+        android:textColor="#FFF"
+        android:text="INGRESAR"
+        android:background="@drawable/border"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"
+            android:id="@+id/linea"
+            android:layout_margin="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linea"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/btnNuevo"
+            android:textColor="#FFF"
+            android:text="REGISTRARSE"
+            android:background="@drawable/border"/>
+    </LinearLayout>
+</RelativeLayout>

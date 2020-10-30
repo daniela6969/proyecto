@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EBB20E</color>
+    <color name="colorPrimaryDark">#FFEB3B</color>
+    <color name="colorAccent">#d61a59</color>
+    <color name="colorOpcion">#D9F3F2FA</color>
+    <color name="colorAzul">#e32807ce</color>
+    <color name="colorRojo">#d1960722</color>
+    <color name="colorVerde">#d1269607</color>
+    <color name="colorNegro">#d11c1d1c</color>
+    <color name="colorNegroOscuro">#000000</color>
+    <color name="colorAmarillo">#d1e1e15d</color>
+    <color name="colorTransparent">#9aeaeae4</color>
+
+
+    <color name="colorBlanco">#ffffff</color>
+    <color name="verdeclaro">#feeae6</color>
+    <color name="plomo">#babcbb</color>
+    <color name="celeste">#deb5d8</color>
+    <color name="carrito">#442c2e</color>
+    <color name="negro">#000000</color>
+    <color name="fondocolor">#f0d3f7</color>
+    <color name="pruebacolor">#9ac9a9</color>
+
+
+
+
+
+
+</resources>

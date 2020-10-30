@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.facturaFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvJuegos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="10dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardBackgroundColor="@color/colorBlanco">
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1" >
+                    <TableRow>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/idItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dip"
+                            android:text="  Cantidad "
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNegro"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/idNitems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:textSize="20dp"
+                            android:paddingLeft="80dp"
+                            android:gravity="left"
+                            android:text="0.0" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dip"
+                            android:text="  Sub Total "
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/colorNegro"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/txtTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:paddingLeft="80dp"
+                            android:gravity="left"
+                            android:text="0.0"
+                            android:textSize="20dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dip"
+                            android:text="   Descuento"
+                            android:textStyle="bold|italic"
+                            android:paddingLeft="80dp"
+                            android:textColor="@color/colorRojo"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/txtDesceuntos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:textSize="20dp"
+                            android:paddingLeft="77dp"
+                            android:gravity="left"
+                            android:text="0.0" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:id="@+id/age1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dip"
+                            android:text="   IVA"
+                            android:textStyle="bold|italic"
+                            android:paddingLeft="80dp"
+                            android:textColor="@color/colorRojo"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/txtIva"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:textSize="20dp"
+                            android:paddingLeft="77dp"
+                            android:gravity="left"
+                            android:text="0.0" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dip"
+                            android:textStyle="bold|italic"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorNegroOscuro"
+                            android:text="  Total a pagar" />
+                        <TextView
+                            android:id="@+id/txtTotalPagar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold|italic"
+                            android:textSize="20dp"
+                            android:paddingLeft="80dp"
+                            android:gravity="left"
+                            android:text="0.0" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
